@@ -1,13 +1,34 @@
 :root {
     --yellow: #dad6a9;
+    --orange: #e9961b;
     --white: #ffffff;
+    --gray: #808080;
     --black: #000000;
 }
 
 body {
     background: var(--bg);
     color: var(--fontColor);
-    font-family: helvetica;
+    font-family: monospace;
+}
+
+nav {
+    border-radius: 30px;
+    display: flex;
+    background: var(--fontColor);
+    padding: 8px 40px;
+    margin-top: 40px;
+}
+nav a {
+    margin: 10px;
+    font-size: 16px;
+    color: var(--fontReverse);
+    text-decoration: none;
+}
+
+.main {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 li {
@@ -16,9 +37,12 @@ li {
 h1 {
     text-align: center;
 }
+
 .light-theme {
     --bg: var(--yellow);
     --fontColor: var(--black);
+    --fontReverse: var(--yellow);
+    --fontVisited: var(--gray);
     --btnBg: var(--black);
     --btnFontColor: var(--yellow);
 }
@@ -26,6 +50,8 @@ h1 {
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--yellow);
+    --fontReverse: var(--black);
+    --fontVisited: var(--orange);
     --btnBg: var(--yellow);
     --btnFontColor: var(--black);
 }
