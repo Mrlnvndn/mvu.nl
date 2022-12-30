@@ -1,5 +1,5 @@
 :root {
-    --yellow: #dad6a9;
+    --yellow: #ffffff;
     --orange: #e9961b;
     --white: #ffffff;
     --gray: #808080;
@@ -65,4 +65,14 @@ h1 {
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+
+.header {
+    margin: 0;
+    background: url(img/general/giphy2.gif);
+    background-size: 650px 200px;
+    font-size: 180px;
+    font-family: 'Raleway', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
