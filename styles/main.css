@@ -1,0 +1,115 @@
+:root {
+    --white: #ffffff;
+    --orange: #e9961b;
+    --gray: #808080;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --fontReverse: var(--white);
+    --fontVisited: var(--gray);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --fontReverse: var(--black);
+    --fontVisited: var(--orange);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: 'Source Code Pro Regular';
+}
+
+nav {
+    font-family: 'Source Code Pro Bold';
+    border-radius: 30px;
+    display: flex;
+    background: var(--fontColor);
+    padding: 8px 40px;
+    overflow: auto;
+}
+
+nav a {
+    float: left;
+    padding: 12px;
+    font-size: 17px;
+    color: var(--fontReverse);
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+}
+
+nav a:hover {
+    color: var(--font);
+    background-color: var(--btnFontColor);
+}
+
+.main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+li {
+    list-style: circle;
+}
+
+h1 {
+    text-align: center;
+}
+
+.modebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.header {
+    margin: 0;
+    background: url(../images/general/code.gif);
+    /* background-size: 400px 400px; */
+    font-size: 180px;
+    font-family: 'Source Code Pro Bold';
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@font-face {
+    font-family: 'Source Code Pro Regular';
+    src: url(../fonts/SourceCodePro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro Light';
+    src: url(../fonts/SourceCodePro-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro Semibold';
+    src: url(../fonts/SourceCodePro-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro ExtraLight';
+    src: url(../fonts/SourceCodePro-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro Bold';
+    src: url(../fonts/SourceCodePro-Bold.ttf) format('truetype');
+}
